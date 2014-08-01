@@ -1,4 +1,9 @@
 Huckberry::Application.routes.draw do
+  root 'pages#home'
+  match '/j1',       to: 'pages#j1',         via: 'get'
+  match '/j2',       to: 'pages#j2',         via: 'get'
+    match '/b1',       to: 'pages#b1',         via: 'get'
+  match '/b2',       to: 'pages#b2',         via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
